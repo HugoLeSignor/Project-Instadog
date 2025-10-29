@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Instadog</title>
+    <title>Accueil - Instadog</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header class="border-b border-solid border-gray-200 md:flex md:items-center md:justify-between md:gap-8 lg:px-50">
+        <!-- Logo -->
         <div class="p-2">
             <a href="index.html">
                 <div class="flex items-center justify-center">
@@ -24,18 +26,22 @@
                 </div>
             </a>
         </div>
-        <form action="" class="hidden md:flex flex-1 max-w-sm mx-auto">
+
+        <!-- Search Bar -->
+        <form action="#" class="hidden md:flex flex-1 max-w-sm mx-auto">
             <div
                 class="relative flex items-center border-solid border border-gray-300 bg-gray-100 rounded-xl px-3 py-2 w-full">
-                <img src="assets/img/search.svg" alt="Rechercher" class="w-5 h-5 mr-2">
+                <img src="assets/img/search.svg" alt="Icône de recherche" class="w-5 h-5 mr-2">
                 <input type="search" placeholder="Rechercher"
                     class="bg-transparent border-none outline-none flex-1 text-sm">
             </div>
         </form>
+
+        <!-- Navigation -->
         <nav class="pb-3">
             <ul class="flex row-auto justify-between items-center p-2 mt-5 mx-10 md:gap-5 lg:gap-8">
                 <li>
-                    <a href="">
+                    <a href="index.html" aria-label="Accueil">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-house-icon lucide-house">
@@ -46,7 +52,7 @@
                     </a>
                 </li>
                 <li class="relative">
-                    <a class="relative inline-block" href="message.html">
+                    <a class="relative inline-block" href="message.html" aria-label="Messages">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-message-square-icon lucide-message-square">
@@ -54,13 +60,11 @@
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                         </svg>
                         <span
-                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">
-                            1
-                        </span>
+                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">1</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#" aria-label="Créer une publication">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-plus-icon lucide-plus">
@@ -70,7 +74,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#" aria-label="Explorer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-compass-icon lucide-compass">
@@ -81,7 +85,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#" aria-label="Notifications">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-bell-icon lucide-bell">
@@ -92,81 +96,102 @@
                     </a>
                 </li>
                 <li class="border border-gray-200 rounded-full overflow-auto h-8 w-8 object-bottom">
-                    <a href=""><img class="h-full object-cover" src="assets/img/profil.jpg" alt=""></a>
+                    <a href="#" aria-label="Mon profil">
+                        <img class="h-full object-cover" src="assets/img/profil.jpg" alt="Photo de profil">
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
         <div class="flex justify-between">
             <div class="w-full">
+                <!-- Stories Section -->
                 <section class="p-5 overflow-hidden pt-9 lg:px-50">
                     <div class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
+                        <!-- Story: Moi -->
                         <div class="flex-none w-15 text-center cursor-pointer">
-                            <div class="w-16 h-16 rounded-full bg-gray-400 p-0.5"><img src="assets/img/profil.jpg"
-                                    alt="Moi"
+                            <div class="w-16 h-16 rounded-full bg-gray-400 p-0.5">
+                                <img src="assets/img/profil.jpg" alt="Ma story"
                                     class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
                             </div>
                             <span class="text-xs text-gray-800 font-semibold block">Moi</span>
                         </div>
+
+                        <!-- Story: Rex -->
                         <div class="flex-none w-15 text-center cursor-pointer">
                             <div
                                 class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
-                                <img src="assets/img/dog-1.jpg" alt="Rex"
+                                <img src="assets/img/dog-1.jpg" alt="Story de Rex"
                                     class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
                             </div>
                             <span class="text-xs text-gray-800 font-semibold block">Rex</span>
                         </div>
+
+                        <!-- Story: Doug -->
                         <div class="flex-none w-15 text-center cursor-pointer">
                             <div
                                 class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
-                                <img src="assets/img/dog-2.jpg" alt="Doug"
+                                <img src="assets/img/dog-2.jpg" alt="Story de Doug"
                                     class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
                             </div>
-
                             <span class="text-xs text-gray-800 font-semibold block">Doug</span>
                         </div>
+
+                        <!-- Story: Luna -->
                         <div class="flex-none w-15 text-center cursor-pointer">
                             <div
                                 class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
-                                <img src="assets/img/dog-3.jpg" alt="Luna"
+                                <img src="assets/img/dog-3.jpg" alt="Story de Luna"
                                     class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
                             </div>
-
                             <span class="text-xs text-gray-800 font-semibold block">Luna</span>
                         </div>
+
+                        <!-- Story: Rex (duplicate) -->
                         <div class="flex-none w-15 text-center cursor-pointer">
                             <div
                                 class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
-                                <img src="assets/img/dog-1.jpg" alt="rex"
+                                <img src="assets/img/dog-1.jpg" alt="Story de rex"
                                     class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
                             </div>
                             <span class="text-xs text-gray-800 font-semibold block">rex</span>
                         </div>
                     </div>
                 </section>
+
+                <!-- Posts Feed -->
                 <section class="lg:pl-50">
-                    <div class="w-full">
+                    <!-- Post 1: Rex -->
+                    <article class="w-full">
                         <div class="md:w-full border border-gray-300 rounded-lg overflow-hidden">
+                            <!-- Post Header -->
                             <div class="flex items-start p-4">
-                                <img src="assets/img/dog-1.jpg" alt="Rex profile"
+                                <img src="assets/img/dog-1.jpg" alt="Photo de profil de Rex"
                                     class="w-10 h-10 rounded-full mr-3 cursor-pointer">
                                 <div class="flex-1">
                                     <p class="text-sm font-semibold text-gray-900 truncate cursor-pointer">rex</p>
                                     <p class="text-xs text-gray-500 truncate">Paris • 2h</p>
                                 </div>
                             </div>
-                            <img src="assets/img/dog-1.jpg" alt="Rex eating" class="object-cover w-full h-80 md:h-200 ">
+
+                            <!-- Post Image -->
+                            <img src="assets/img/dog-1.jpg" alt="Rex mange ses croquettes"
+                                class="object-cover w-full h-80 md:h-200">
+
+                            <!-- Post Actions -->
                             <div class="px-4 py-2 flex items-center gap-4">
-                                <a href="">
+                                <button type="button" aria-label="J'aime">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
                                         <path
                                             d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                                     </svg>
-                                </a>
-                                <a href="">
+                                </button>
+                                <a href="#" aria-label="Commenter">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -175,7 +200,7 @@
                                             d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                                     </svg>
                                 </a>
-                                <a href="">
+                                <a href="#" aria-label="Partager">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
@@ -184,39 +209,51 @@
                                     </svg>
                                 </a>
                             </div>
+
+                            <!-- Post Content -->
                             <div class="px-4">
                                 <p class="font-bold">1234 j'aime</p>
-                                <p class="text-sm"><strong>rex </strong>Incroyables les nouvelles croquettes que les
-                                    humains
-                                    m'ont achetés, elles sont folles !! 🐶</p>
+                                <p class="text-sm"><strong>rex</strong> Incroyables les nouvelles croquettes que les
+                                    humains m'ont achetés, elles sont folles !! 🐶</p>
                             </div>
+
+                            <!-- Post Footer -->
                             <div class="px-4 pb-4 text-xs text-gray-500 flex flex-col justify-between gap-4">
-                                <span class="m-0 cursor-pointer">Voir les 24 commentaires</span>
+                                <button type="button" class="m-0 cursor-pointer text-left">Voir les 24
+                                    commentaires</button>
                                 <span class="font-semibold">Il y a 2 heures</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="w-full mt-5">
+                    </article>
+
+                    <!-- Post 2: Doug -->
+                    <article class="w-full mt-5">
                         <div class="md:w-full border border-gray-300 rounded-lg overflow-hidden">
+                            <!-- Post Header -->
                             <div class="flex items-start p-4">
-                                <img src="assets/img/dog-2.jpg" alt="Rex profile"
+                                <img src="assets/img/dog-2.jpg" alt="Photo de profil de Doug"
                                     class="w-10 h-10 rounded-full mr-3 cursor-pointer">
                                 <div class="flex-1">
                                     <p class="text-sm font-semibold text-gray-900 truncate cursor-pointer">doug</p>
                                     <p class="text-xs text-gray-500 truncate">Lyon • 5h</p>
                                 </div>
                             </div>
-                            <img src="assets/img/dog-2.jpg" alt="Rex eating" class="object-cover w-full h-80 md:h-200">
+
+                            <!-- Post Image -->
+                            <img src="assets/img/dog-2.jpg" alt="Doug profite du soleil"
+                                class="object-cover w-full h-80 md:h-200">
+
+                            <!-- Post Actions -->
                             <div class="px-4 py-2 flex items-center gap-4">
-                                <a href="">
+                                <button type="button" aria-label="J'aime">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
                                         <path
                                             d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                                     </svg>
-                                </a>
-                                <a href="">
+                                </button>
+                                <a href="#" aria-label="Commenter">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -225,7 +262,7 @@
                                             d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                                     </svg>
                                 </a>
-                                <a href="">
+                                <a href="#" aria-label="Partager">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
@@ -234,84 +271,95 @@
                                     </svg>
                                 </a>
                             </div>
+
+                            <!-- Post Content -->
                             <div class="px-4">
                                 <p class="font-bold">842 j'aime</p>
-                                <p class="text-sm"><strong>doug </strong>Aujourd'hui, on a essayé le BARF, c'est
-                                    incroyable
-                                    ! ☀️
-                                </p>
+                                <p class="text-sm"><strong>doug</strong> Aujourd'hui, on a essayé le BARF, c'est
+                                    incroyable ! ☀️</p>
                             </div>
+
+                            <!-- Post Footer -->
                             <div class="px-4 pb-4 text-xs text-gray-500 flex flex-col justify-between gap-4">
-                                <span class="m-0 cursor-pointer">Voir les 15 commentaires</span>
+                                <button type="button" class="m-0 cursor-pointer text-left">Voir les 15
+                                    commentaires</button>
                                 <span class="font-semibold">Il y a 5 heures</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </section>
             </div>
+
+            <!-- Sidebar -->
             <aside class="hidden md:block p-5 max-w-sm lg:mr-50 w-2/5">
+                <!-- User Profile -->
                 <div class="mb-6">
                     <div class="flex items-center mb-4">
-                        <img src="assets/img/profil.jpg" alt="moi" class="w-14 h-14 rounded-full mr-3 cursor-pointer">
+                        <img src="assets/img/profil.jpg" alt="Ma photo de profil"
+                            class="w-14 h-14 rounded-full mr-3 cursor-pointer">
                         <div>
                             <p class="text-sm font-semibold text-gray-900 cursor-pointer">moi</p>
                             <p class="text-xs text-gray-500">Instadog</p>
                         </div>
-                        <a href="" class="ml-auto text-xs text-blue-500 font-semibold">Voir profil</a>
+                        <a href="#" class="ml-auto text-xs text-blue-500 font-semibold">Voir profil</a>
                     </div>
                 </div>
 
+                <!-- Suggestions -->
                 <div>
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-sm font-semibold text-gray-500">Suggestions pour vous</h3>
-                        <a href="" class="text-xs text-gray-900 font-semibold">Tout voir</a>
+                        <a href="#" class="text-xs text-gray-900 font-semibold">Tout voir</a>
                     </div>
 
                     <div class="space-y-3">
+                        <!-- Suggestion: Rex -->
                         <div class="flex items-center">
-                            <img src="assets/img/dog-1.jpg" alt="rex"
+                            <img src="assets/img/dog-1.jpg" alt="Photo de profil de rex"
                                 class="w-10 h-10 rounded-full mr-3 cursor-pointer">
                             <div class="flex-1">
                                 <p class="text-sm font-semibold text-gray-900 cursor-pointer">rex</p>
                                 <p class="text-xs text-gray-500">Populaire</p>
                             </div>
-                            <a href="" class="text-xs text-blue-500 font-semibold">Suivre</a>
+                            <button type="button" class="text-xs text-blue-500 font-semibold">Suivre</button>
                         </div>
 
+                        <!-- Suggestion: Doug -->
                         <div class="flex items-center">
-                            <img src="assets/img/dog-2.jpg" alt="doug"
+                            <img src="assets/img/dog-2.jpg" alt="Photo de profil de doug"
                                 class="w-10 h-10 rounded-full mr-3 cursor-pointer">
                             <div class="flex-1">
                                 <p class="text-sm font-semibold text-gray-900 cursor-pointer">doug</p>
                                 <p class="text-xs text-gray-500">Suggéré</p>
                             </div>
-                            <a href="" class="text-xs text-blue-500 font-semibold">Suivre</a>
+                            <button type="button" class="text-xs text-blue-500 font-semibold">Suivre</button>
                         </div>
 
+                        <!-- Suggestion: Luna -->
                         <div class="flex items-center">
-                            <img src="assets/img/dog-3.jpg" alt="luna"
+                            <img src="assets/img/dog-3.jpg" alt="Photo de profil de luna"
                                 class="w-10 h-10 rounded-full mr-3 cursor-pointer">
                             <div class="flex-1">
                                 <p class="text-sm font-semibold text-gray-900 cursor-pointer">luna</p>
                                 <p class="text-xs text-gray-500">Nouveau</p>
                             </div>
-                            <a href="" class="text-xs text-blue-500 font-semibold">Suivre</a>
+                            <button type="button" class="text-xs text-blue-500 font-semibold">Suivre</button>
                         </div>
                     </div>
                 </div>
             </aside>
         </div>
-
-
     </main>
+
+    <!-- Footer -->
     <footer class="lg:px-50">
         <nav class="p-5">
             <ul class="flex gap-4 text-xs text-gray-400">
-                <li><a href="">À propos</a></li>
-                <li><a href="">Aide</a></li>
-                <li><a href="">Presse</a></li>
-                <li><a href="">API</a></li>
-                <li><a href="">Carrières</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Aide</a></li>
+                <li><a href="#">Presse</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Carrières</a></li>
             </ul>
         </nav>
         <p class="px-5 pb-3 text-xs text-gray-400">&copy; 2025 Instadog</p>
