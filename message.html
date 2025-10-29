@@ -94,7 +94,7 @@
         </nav>
     </header>
     <main>
-        <section class="max-w-6xl mx-5 md:mx-auto mt-8 border border-gray-300 rounded-lg overflow-hidden md:flex">
+        <section class="max-w-full mx-5 mt-10 border border-gray-300 rounded-lg overflow-hidden md:flex lg:mx-50">
             <div class=" w-full md:w-1/3 md:border-r border-gray-300">
                 <div class="p-4 border-b border-gray-300">
                     <h2 class="text-2xl font-bold">Messages</h2>
@@ -126,7 +126,7 @@
                     </div>
 
 
-                    <div class="flex items-center p-4 border-b md:border-b-0 border-gray-200 cursor-pointer ">
+                    <div class="flex items-center p-4 border-b md:border-b-0 border-gray-200 cursor-pointer md:hidden">
                         <img src="assets/img/dog-1.jpg" alt="rex" class="w-14 h-14 rounded-full mr-4">
                         <div class="flex-1">
                             <p class="text-sm font-semibold text-gray-900">rex</p>
@@ -143,9 +143,9 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-2/3 flex flex-col md:border-t-0 border-gray-300">
+            <div class="w-full md:w-2/3 flex flex-col md:border-t-0 border-gray-300 ">
 
-                <div class="p-4 border-gray-300 hidden md:flex items-center ">
+                <div class=" p-4 border-gray-300 hidden md:flex items-center ">
                     <img src="assets/img/dog-1.jpg" alt="rex" class="w-10 h-10 rounded-full mr-3">
                     <div class="flex-1">
                         <p class="text-sm font-semibold text-gray-900">rex</p>
@@ -165,7 +165,8 @@
                     <div class="flex items-start mb-4">
                         <img src="assets/img/dog-1.jpg" alt="rex" class="w-8 h-8 rounded-full mr-2">
                         <div>
-                            <div class="bg-white rounded-2xl px-4 py-2 max-w-xs border border-gray-200">
+                            <div
+                                class="bg-white rounded-r-2xl rounded-b-2xl px-4 py-2 max-w-xs border border-gray-200 ">
                                 <p class="text-sm">Hello ! Prêt pour la balade ? 🐾</p>
                                 <span class="text-xs text-gray-500">14:12</span>
                             </div>
@@ -175,7 +176,8 @@
 
                     <div class="flex items-start mb-4 justify-end">
                         <div class="text-right">
-                            <div class="bg-blue-500 text-white rounded-2xl px-4 py-2 max-w-xs inline-block">
+                            <div
+                                class="bg-blue-500 text-white rounded-l-2xl rounded-b-2xl px-4 py-2 max-w-xs inline-block">
                                 <p class="text-sm">Toujours ! On se retrouve au parc.</p>
                                 <div class="text-xs text-gray-200 mt-1">14:13 • Vu</div>
                             </div>
@@ -187,7 +189,7 @@
                     <div class="flex items-start mb-4">
                         <img src="assets/img/dog-1.jpg" alt="rex" class="w-8 h-8 rounded-full mr-2">
                         <div>
-                            <div class="bg-white rounded-2xl px-4 py-2 max-w-xs border border-gray-200"">
+                            <div class="bg-white rounded-r-2xl rounded-b-2xl px-4 py-2 max-w-xs border border-gray-200"">
                                 <p class=" text-sm">Parfait, j'apporte les friandises !</p>
                                 <span class="text-xs text-gray-500">14:15</span>
                             </div>
@@ -217,16 +219,18 @@
         </section>
     </main>
     <footer class="lg:px-50">
-        <nav class="p-5">
-            <ul class="flex gap-4 text-xs text-gray-400">
-                <li><a href="">À propos</a></li>
-                <li><a href="">Aide</a></li>
-                <li><a href="">Presse</a></li>
-                <li><a href="">API</a></li>
-                <li><a href="">Carrières</a></li>
-            </ul>
-        </nav>
-        <p class="px-5 pb-3 text-xs text-gray-400">&copy; 2025 Instadog</p>
+        <div class="md:flex md:items-center pb-3">
+            <nav class="p-5">
+                <ul class="flex gap-4 text-xs text-gray-400">
+                    <li><a href="">À propos</a></li>
+                    <li><a href="">Aide</a></li>
+                    <li><a href="">Presse</a></li>
+                    <li><a href="">API</a></li>
+                    <li><a href="">Carrières</a></li>
+                </ul>
+            </nav>
+            <p class="px-5 md:px-0 text-xs text-gray-400">&copy; 2025 Instadog</p>
+        </div>
     </footer>
 </body>
 
