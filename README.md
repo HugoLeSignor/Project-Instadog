@@ -36,8 +36,7 @@ This project leverages Tailwind CSS for rapid UI development:
 │   ├── lib/          # Tailwind source
 │   └── css/          # Compiled CSS
 ├── index.html
-├── package.json
-└── tailwind.config.js
+└── package.json
 ```
 
 ## 🐕 Concept
