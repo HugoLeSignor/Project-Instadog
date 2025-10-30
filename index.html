@@ -10,29 +10,32 @@
 
 <body>
     <!-- Header -->
-    <header class="border-b border-gray-200 md:flex md:items-center md:justify-between md:gap-8 lg:px-50">
+    <header class="bg-white border-b border-gray-200 md:flex md:items-center md:justify-between md:gap-8 lg:px-50">
         <!-- Logo -->
         <div class="p-2">
-            <a href="index.html">
+            <a href="index.html" class="transition-opacity hover:opacity-70">
                 <div class="flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-instagram-icon lucide-instagram">
+                        class="lucide lucide-instagram-icon lucide-instagram transition-transform hover:scale-110">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                     </svg>
-                    <h1 class="font-sans font-bold text-2xl md:text-4xl">Instadog</h1>
+                    <h1 class="font-sans font-bold text-2xl md:text-4xl transition-all hover:text-gray-600">Instadog
+                    </h1>
                 </div>
             </a>
         </div>
 
         <!-- Search Bar -->
         <form action="#" class="hidden md:flex flex-1 max-w-sm mx-auto">
-            <div class="relative flex items-center border border-gray-300 bg-gray-100 rounded-xl px-3 py-2 w-full">
-                <img src="assets/img/search.svg" alt="Icône de recherche" class="w-5 h-5 mr-2">
+            <div
+                class="relative flex items-center border border-gray-300 bg-gray-100 rounded-xl px-3 py-2 w-full transition-all hover:border-gray-400 focus-within:border-gray-400 focus-within:bg-white focus-within:shadow-sm">
+                <img src="assets/img/search.svg" alt="Icône de recherche"
+                    class="w-5 h-5 mr-2 transition-opacity hover:opacity-70">
                 <input type="search" placeholder="Rechercher"
-                    class="bg-transparent border-none outline-none flex-1 text-sm">
+                    class="bg-transparent border-none outline-none flex-1 text-sm transition-all">
             </div>
         </form>
 
@@ -40,10 +43,11 @@
         <nav class="pb-3">
             <ul class="flex justify-between items-center p-2 mt-5 mx-10 md:gap-5 lg:gap-8">
                 <li>
-                    <a href="index.html" aria-label="Accueil">
+                    <a class="relative inline-block transition-all hover:scale-110 hover:text-gray-600 bg-gray-200 rounded-full p-2"
+                        href="index.html" aria-label="Accueil">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-house-icon lucide-house">
+                            class="lucide lucide-house-icon lucide-house transition-all">
                             <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
                             <path
                                 d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -51,32 +55,35 @@
                     </a>
                 </li>
                 <li class="relative">
-                    <a class="relative inline-block" href="message.html" aria-label="Messages">
+                    <a class="relative inline-block transition-all hover:scale-110 hover:text-gray-600"
+                        href="message.html" aria-label="Messages">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-message-square-icon lucide-message-square">
+                            class="lucide lucide-message-square-icon lucide-message-square transition-all">
                             <path
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                         </svg>
                         <span
-                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">1</span>
+                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center transition-all hover:scale-110">1</span>
                     </a>
                 </li>
                 <li>
-                    <a href="publication.html" aria-label="Créer une publication">
+                    <a class="relative inline-block transition-all hover:scale-110 hover:text-gray-600"
+                        href="publication.html" aria-label="Créer une publication">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-plus-icon lucide-plus">
+                            class="lucide lucide-plus-icon lucide-plus transition-all">
                             <path d="M5 12h14" />
                             <path d="M12 5v14" />
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="#" aria-label="Explorer">
+                    <a class="relative inline-block transition-all hover:scale-110 hover:text-gray-600" href="#"
+                        aria-label="Explorer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-compass-icon lucide-compass">
+                            class="lucide lucide-compass-icon lucide-compass transition-all">
                             <path
                                 d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
                             <circle cx="12" cy="12" r="10" />
@@ -84,19 +91,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="notifications.html" aria-label="Notifications">
+                    <a class="relative inline-block hover:scale-110 hover:text-gray-600" href="notifications.html"
+                        aria-label="Notifications">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-bell-icon lucide-bell">
+                            class="lucide lucide-bell-icon lucide-bell transition-all">
                             <path d="M10.268 21a2 2 0 0 0 3.464 0" />
                             <path
                                 d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
                         </svg>
                     </a>
                 </li>
-                <li class="border border-gray-200 rounded-full overflow-auto h-8 w-8">
-                    <a href="profil.html" aria-label="Mon profil">
-                        <img class="h-full object-cover" src="assets/img/profil.jpg" alt="Photo de profil">
+                <li
+                    class="border border-gray-200 rounded-full overflow-auto h-8 w-8 transition-all hover:scale-110 hover:border-gray-400 hover:shadow-md">
+                    <a href="profil.html" aria-label="Mon profil" class="transition-all">
+                        <img class="h-full w-full object-cover rounded-full transition-all" src="assets/img/profil.jpg"
+                            alt="Photo de profil">
                     </a>
                 </li>
             </ul>
@@ -109,54 +119,59 @@
             <div class="w-full">
                 <!-- Stories Section -->
                 <section class="p-5 overflow-hidden pt-9 lg:px-50">
-                    <div class="flex gap-4 overflow-x-auto pb-2">
+                    <div class="flex gap-4 overflow-x-auto pb-2 pt-2 ">
                         <!-- Story: Moi -->
-                        <div class="flex-none w-15 text-center cursor-pointer">
-                            <div class="w-16 h-16 rounded-full bg-gray-400 p-0.5">
+                        <div class="flex-none w-15 text-center cursor-pointer transition-all hover:scale-105">
+                            <div class="w-16 h-16 rounded-full bg-gray-400 p-0.5 transition-all hover:bg-gray-500">
                                 <img src="assets/img/profil.jpg" alt="Ma story"
-                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
+                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block transition-all hover:opacity-90">
                             </div>
-                            <span class="text-xs text-gray-800 font-semibold block">Moi</span>
+                            <span
+                                class="text-xs text-gray-800 font-semibold block transition-colors hover:text-gray-600">Moi</span>
                         </div>
 
                         <!-- Story: Rex -->
-                        <div class="flex-none w-15 text-center cursor-pointer">
+                        <div class="flex-none w-15 text-center cursor-pointer transition-all hover:scale-105">
                             <div
-                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
+                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5 transition-all hover:shadow-lg">
                                 <img src="assets/img/dog-1.jpg" alt="Story de Rex"
-                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
+                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block transition-all hover:opacity-90">
                             </div>
-                            <span class="text-xs text-gray-800 font-semibold block">Rex</span>
+                            <span
+                                class="text-xs text-gray-800 font-semibold block transition-colors hover:text-gray-600">Rex</span>
                         </div>
 
                         <!-- Story: Doug -->
-                        <div class="flex-none w-15 text-center cursor-pointer">
+                        <div class="flex-none w-15 text-center cursor-pointer transition-all hover:scale-105">
                             <div
-                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
+                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5 transition-all hover:shadow-lg">
                                 <img src="assets/img/dog-2.jpg" alt="Story de Doug"
-                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
+                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block transition-all hover:opacity-90">
                             </div>
-                            <span class="text-xs text-gray-800 font-semibold block">Doug</span>
+                            <span
+                                class="text-xs text-gray-800 font-semibold block transition-colors hover:text-gray-600">Doug</span>
                         </div>
 
                         <!-- Story: Luna -->
-                        <div class="flex-none w-15 text-center cursor-pointer">
+                        <div class="flex-none w-15 text-center cursor-pointer transition-all hover:scale-105">
                             <div
-                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
+                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5 transition-all hover:shadow-lg">
                                 <img src="assets/img/dog-3.jpg" alt="Story de Luna"
-                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
+                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block transition-all hover:opacity-90">
                             </div>
-                            <span class="text-xs text-gray-800 font-semibold block">Luna</span>
+                            <span
+                                class="text-xs text-gray-800 font-semibold block transition-colors hover:text-gray-600">Luna</span>
                         </div>
 
                         <!-- Story: Rex (duplicate) -->
-                        <div class="flex-none w-15 text-center cursor-pointer">
+                        <div class="flex-none w-15 text-center cursor-pointer transition-all hover:scale-105">
                             <div
-                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5">
+                                class="w-16 h-16 rounded-full bg-linear-to-tr from-purple-500 via-red-500 to-yellow-500 p-0.5 transition-all hover:shadow-lg">
                                 <img src="assets/img/dog-1.jpg" alt="Story de rex"
-                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block">
+                                    class="w-15 h-15 rounded-full border border-white object-cover mx-auto mb-1 block transition-all hover:opacity-90">
                             </div>
-                            <span class="text-xs text-gray-800 font-semibold block">rex</span>
+                            <span
+                                class="text-xs text-gray-800 font-semibold block transition-colors hover:text-gray-600">rex</span>
                         </div>
                     </div>
                 </section>
@@ -165,44 +180,51 @@
                 <section class="lg:pl-50">
                     <!-- Post 1: Rex -->
                     <article class="w-full">
-                        <div class="md:w-full border border-gray-300 rounded-lg overflow-hidden">
+                        <div class="md:w-full border border-gray-300 rounded-lg overflow-hidden transition-all">
                             <!-- Post Header -->
                             <div class="flex items-start p-4">
                                 <img src="assets/img/dog-1.jpg" alt="Photo de profil de Rex"
-                                    class="w-10 h-10 rounded-full mr-3 cursor-pointer">
+                                    class="w-10 h-10 rounded-full mr-3 cursor-pointer transition-all hover:scale-110">
                                 <div class="flex-1">
-                                    <p class="text-sm font-semibold text-gray-900 truncate cursor-pointer">rex</p>
+                                    <p
+                                        class="text-sm font-semibold text-gray-900 truncate cursor-pointer transition-colors hover:text-gray-600">
+                                        rex</p>
                                     <p class="text-xs text-gray-500 truncate">Paris • 2h</p>
                                 </div>
                             </div>
 
                             <!-- Post Image -->
                             <img src="assets/img/dog-1.jpg" alt="Rex mange ses croquettes"
-                                class="object-cover w-full h-80 md:h-200">
+                                class="object-cover w-full h-80 md:h-200 transition-all hover:opacity-95">
 
                             <!-- Post Actions -->
                             <div class="px-4 py-2 flex items-center gap-4">
-                                <button type="button" aria-label="J'aime">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
-                                        <path
-                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-                                    </svg>
-                                </button>
-                                <a href="#" aria-label="Commenter">
+                                <a aria-label="J'aime"
+                                    class="transition-all hover:scale-110 hover:text-red-500 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="lucide lucide-message-square-icon lucide-message-square">
+                                        class="lucide lucide-heart-icon lucide-heart transition-all">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Commenter"
+                                    class="transition-all hover:scale-110 hover:text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-message-square-icon lucide-message-square transition-all">
                                         <path
                                             d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                                     </svg>
                                 </a>
-                                <a href="#" aria-label="Partager">
+                                <a href="#" aria-label="Partager"
+                                    class="transition-all hover:scale-110 hover:text-blue-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-send-icon lucide-send transition-all">
                                         <path
                                             d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
                                     </svg>
@@ -218,8 +240,9 @@
 
                             <!-- Post Footer -->
                             <div class="px-4 pb-4 text-xs text-gray-500 flex flex-col justify-between gap-4">
-                                <button type="button" class="m-0 cursor-pointer text-left">Voir les 24
-                                    commentaires</button>
+                                <a class="m-0 cursor-pointer text-left transition-colors hover:text-gray-700">Voir les
+                                    24
+                                    commentaires</a>
                                 <span class="font-semibold">Il y a 2 heures</span>
                             </div>
                         </div>
@@ -227,44 +250,51 @@
 
                     <!-- Post 2: Doug -->
                     <article class="w-full mt-5">
-                        <div class="md:w-full border border-gray-300 rounded-lg overflow-hidden">
+                        <div
+                            class="md:w-full border border-gray-300 rounded-lg overflow-hidden transition-all hover:shadow-lg">
                             <!-- Post Header -->
                             <div class="flex items-start p-4">
                                 <img src="assets/img/dog-2.jpg" alt="Photo de profil de Doug"
-                                    class="w-10 h-10 rounded-full mr-3 cursor-pointer">
+                                    class="w-10 h-10 rounded-full mr-3 cursor-pointer transition-all hover:scale-110 hover:ring-2 hover:ring-gray-300">
                                 <div class="flex-1">
-                                    <p class="text-sm font-semibold text-gray-900 truncate cursor-pointer">doug</p>
+                                    <p
+                                        class="text-sm font-semibold text-gray-900 truncate cursor-pointer transition-colors hover:text-gray-600">
+                                        doug</p>
                                     <p class="text-xs text-gray-500 truncate">Lyon • 5h</p>
                                 </div>
                             </div>
 
                             <!-- Post Image -->
                             <img src="assets/img/dog-2.jpg" alt="Doug profite du soleil"
-                                class="object-cover w-full h-80 md:h-200">
+                                class="object-cover w-full h-80 md:h-200 transition-all hover:opacity-95">
 
                             <!-- Post Actions -->
                             <div class="px-4 py-2 flex items-center gap-4">
-                                <button type="button" aria-label="J'aime">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
-                                        <path
-                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-                                    </svg>
-                                </button>
-                                <a href="#" aria-label="Commenter">
+                                <a aria-label="J'aime" class="transition-all hover:scale-110 hover:text-red-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="lucide lucide-message-square-icon lucide-message-square">
+                                        class="lucide lucide-heart-icon lucide-heart transition-all">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Commenter"
+                                    class="transition-all hover:scale-110 hover:text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-message-square-icon lucide-message-square transition-all">
                                         <path
                                             d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                                     </svg>
                                 </a>
-                                <a href="#" aria-label="Partager">
+                                <a href="#" aria-label="Partager"
+                                    class="transition-all hover:scale-110 hover:text-blue-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-send-icon lucide-send transition-all">
                                         <path
                                             d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
                                     </svg>
@@ -280,8 +310,9 @@
 
                             <!-- Post Footer -->
                             <div class="px-4 pb-4 text-xs text-gray-500 flex flex-col justify-between gap-4">
-                                <button type="button" class="m-0 cursor-pointer text-left">Voir les 15
-                                    commentaires</button>
+                                <a class="m-0 cursor-pointer text-left transition-colors hover:text-gray-700">Voir les
+                                    15
+                                    commentaires</a>
                                 <span class="font-semibold">Il y a 5 heures</span>
                             </div>
                         </div>
@@ -295,14 +326,18 @@
                 <div class="mb-6">
                     <div class="flex items-center mb-4">
                         <a href="profil.html"><img src="assets/img/profil.jpg" alt="Ma photo de profil"
-                                class="w-14 h-14 rounded-full mr-3 cursor-pointer object-cover"></a>
+                                class="w-14 h-14 rounded-full mr-3 cursor-pointer object-cover transition-all hover:scale-110 hover:ring-2 hover:ring-gray-300"></a>
                         <div>
                             <a href="profil.html">
-                                <p class="text-sm font-semibold text-gray-900 cursor-pointer">moi</p>
+                                <p
+                                    class="text-sm font-semibold text-gray-900 cursor-pointer transition-colors hover:text-gray-600">
+                                    moi</p>
                             </a>
                             <p class="text-xs text-gray-500">Instadog</p>
                         </div>
-                        <a href="profil.html" class="ml-auto text-xs text-blue-500 font-semibold">Voir profil</a>
+                        <a href="profil.html"
+                            class="ml-auto text-xs text-blue-500 font-semibold transition-colors hover:text-blue-600">Voir
+                            profil</a>
                     </div>
                 </div>
 
@@ -310,41 +345,52 @@
                 <div>
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-sm font-semibold text-gray-500">Suggestions pour vous</h3>
-                        <a href="#" class="text-xs text-gray-900 font-semibold">Tout voir</a>
+                        <a href="#"
+                            class="text-xs text-gray-900 font-semibold transition-colors hover:text-gray-600">Tout
+                            voir</a>
                     </div>
 
                     <div class="space-y-3">
                         <!-- Suggestion: Rex -->
-                        <div class="flex items-center">
+                        <div class="flex items-center transition-all hover:bg-gray-50 p-2 rounded-lg -m-2">
                             <img src="assets/img/dog-1.jpg" alt="Photo de profil de rex"
-                                class="w-10 h-10 rounded-full mr-3 cursor-pointer">
+                                class="w-10 h-10 rounded-full mr-3 cursor-pointer transition-all hover:scale-110 hover:ring-2 hover:ring-gray-300">
                             <div class="flex-1">
-                                <p class="text-sm font-semibold text-gray-900 cursor-pointer">rex</p>
+                                <p
+                                    class="text-sm font-semibold text-gray-900 cursor-pointer transition-colors hover:text-gray-600">
+                                    rex</p>
                                 <p class="text-xs text-gray-500">Populaire</p>
                             </div>
-                            <button type="button" class="text-xs text-blue-500 font-semibold">Suivre</button>
+                            <a
+                                class="text-xs text-blue-500 font-semibold transition-colors hover:text-blue-600">Suivre</a>
                         </div>
 
                         <!-- Suggestion: Doug -->
-                        <div class="flex items-center">
+                        <div class="flex items-center transition-all hover:bg-gray-50 p-2 rounded-lg -m-2">
                             <img src="assets/img/dog-2.jpg" alt="Photo de profil de doug"
-                                class="w-10 h-10 rounded-full mr-3 cursor-pointer">
+                                class="w-10 h-10 rounded-full mr-3 cursor-pointer transition-all hover:scale-110 hover:ring-2 hover:ring-gray-300">
                             <div class="flex-1">
-                                <p class="text-sm font-semibold text-gray-900 cursor-pointer">doug</p>
+                                <p
+                                    class="text-sm font-semibold text-gray-900 cursor-pointer transition-colors hover:text-gray-600">
+                                    doug</p>
                                 <p class="text-xs text-gray-500">Suggéré</p>
                             </div>
-                            <button type="button" class="text-xs text-blue-500 font-semibold">Suivre</button>
+                            <a
+                                class="text-xs text-blue-500 font-semibold transition-colors hover:text-blue-600">Suivre</a>
                         </div>
 
                         <!-- Suggestion: Luna -->
-                        <div class="flex items-center">
+                        <div class="flex items-center transition-all hover:bg-gray-50 p-2 rounded-lg -m-2">
                             <img src="assets/img/dog-3.jpg" alt="Photo de profil de luna"
-                                class="w-10 h-10 rounded-full mr-3 cursor-pointer">
+                                class="w-10 h-10 rounded-full mr-3 cursor-pointer transition-all hover:scale-110 hover:ring-2 hover:ring-gray-300">
                             <div class="flex-1">
-                                <p class="text-sm font-semibold text-gray-900 cursor-pointer">luna</p>
+                                <p
+                                    class="text-sm font-semibold text-gray-900 cursor-pointer transition-colors hover:text-gray-600">
+                                    luna</p>
                                 <p class="text-xs text-gray-500">Nouveau</p>
                             </div>
-                            <button type="button" class="text-xs text-blue-500 font-semibold">Suivre</button>
+                            <a
+                                class="text-xs text-blue-500 font-semibold transition-colors hover:text-blue-600">Suivre</a>
                         </div>
                     </div>
                 </div>
@@ -356,11 +402,11 @@
     <footer class="lg:px-50">
         <nav class="p-5">
             <ul class="flex gap-4 text-xs text-gray-400">
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Aide</a></li>
-                <li><a href="#">Presse</a></li>
-                <li><a href="#">API</a></li>
-                <li><a href="#">Carrières</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">À propos</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">Aide</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">Presse</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">API</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">Carrières</a></li>
             </ul>
         </nav>
         <p class="px-5 pb-3 text-xs text-gray-400">&copy; 2025 Instadog</p>

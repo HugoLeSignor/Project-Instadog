@@ -13,26 +13,26 @@
     <header class="border-b border-gray-200 md:flex md:items-center md:justify-between md:gap-8 lg:px-50">
         <!-- Logo -->
         <div class="p-2 md:p-2">
-            <a href="index.html">
+            <a href="index.html" class="transition-opacity hover:opacity-70">
                 <div class="flex items-center justify-center md:justify-start">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-instagram-icon lucide-instagram">
+                        class="lucide lucide-instagram-icon lucide-instagram transition-transform hover:scale-110">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                     </svg>
-                    <h1 class="font-sans font-bold text-2xl md:text-4xl">Instadog</h1>
+                    <h1 class="font-sans font-bold text-2xl md:text-4xl transition-all hover:text-gray-600">Instadog</h1>
                 </div>
             </a>
         </div>
 
         <!-- Search Bar -->
         <form action="#" class="hidden md:flex flex-1 max-w-sm mx-auto">
-            <div class="relative flex items-center border border-gray-300 bg-gray-100 rounded-xl px-3 py-2 w-full">
-                <img src="assets/img/search.svg" alt="Icône de recherche" class="w-5 h-5 mr-2">
+            <div class="relative flex items-center border border-gray-300 bg-gray-100 rounded-xl px-3 py-2 w-full transition-all hover:border-gray-400 focus-within:border-gray-400 focus-within:bg-white focus-within:shadow-sm">
+                <img src="assets/img/search.svg" alt="Icône de recherche" class="w-5 h-5 mr-2 transition-opacity hover:opacity-70">
                 <input type="search" placeholder="Rechercher"
-                    class="bg-transparent border-none outline-none flex-1 text-sm">
+                    class="bg-transparent border-none outline-none flex-1 text-sm transition-all">
             </div>
         </form>
 
@@ -40,10 +40,10 @@
         <nav class="pb-3">
             <ul class="flex justify-center md:justify-end items-center p-2 mt-5 gap-6 md:gap-5 lg:gap-8">
                 <li>
-                    <a href="index.html" aria-label="Accueil">
+                    <a href="index.html" aria-label="Accueil" class="transition-all hover:scale-110 hover:text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-house-icon lucide-house">
+                            class="lucide lucide-house-icon lucide-house transition-all">
                             <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
                             <path
                                 d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -51,32 +51,32 @@
                     </a>
                 </li>
                 <li class="relative">
-                    <a class="relative inline-block" href="message.html" aria-label="Messages">
+                    <a class="relative inline-block transition-all hover:scale-110 hover:text-gray-600" href="message.html" aria-label="Messages">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-message-square-icon lucide-message-square">
+                            class="lucide lucide-message-square-icon lucide-message-square transition-all">
                             <path
                                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                         </svg>
                         <span
-                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">1</span>
+                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center transition-all hover:scale-110">1</span>
                     </a>
                 </li>
                 <li>
-                    <a href="publication.html" aria-label="Créer une publication">
+                    <a href="publication.html" aria-label="Créer une publication" class="transition-all hover:scale-110 hover:text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-plus-icon lucide-plus">
+                            class="lucide lucide-plus-icon lucide-plus transition-all">
                             <path d="M5 12h14" />
                             <path d="M12 5v14" />
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="#" aria-label="Explorer">
+                    <a href="#" aria-label="Explorer" class="transition-all hover:scale-110 hover:text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-compass-icon lucide-compass">
+                            class="lucide lucide-compass-icon lucide-compass transition-all">
                             <path
                                 d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
                             <circle cx="12" cy="12" r="10" />
@@ -84,19 +84,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="notifications.html" aria-label="Notifications">
+                    <a href="notifications.html" aria-label="Notifications" class="transition-all hover:scale-110 hover:text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-bell-icon lucide-bell">
+                            class="lucide lucide-bell-icon lucide-bell transition-all">
                             <path d="M10.268 21a2 2 0 0 0 3.464 0" />
                             <path
                                 d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
                         </svg>
                     </a>
                 </li>
-                <li class="border border-gray-200 rounded-full overflow-auto h-8 w-8">
-                    <a href="#" aria-label="Mon profil">
-                        <img class="h-full object-cover" src="assets/img/profil.jpg" alt="Photo de profil">
+                <li class="border border-gray-200 rounded-full overflow-auto h-8 w-8 transition-all hover:scale-110 hover:border-gray-400 hover:shadow-md">
+                    <a href="#" aria-label="Mon profil" class="block transition-all hover:opacity-80">
+                        <img class="h-full w-full object-cover rounded-full transition-all" src="assets/img/profil.jpg" alt="Photo de profil">
                     </a>
                 </li>
             </ul>
@@ -108,7 +108,7 @@
             <!-- Profile Picture -->
             <div class="flex justify-center md:justify-start mb-6 md:mb-0 md:mr-8">
                 <img src="assets/img/profil.jpg" alt="Photo de profil"
-                    class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-gray-300 border">
+                    class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-gray-300 border transition-all hover:scale-105 hover:ring-2 hover:ring-gray-300 cursor-pointer">
             </div>
 
             <!-- Profile Information -->
@@ -116,18 +116,18 @@
                 <!-- Profile Header-->
                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-4">
                     <div class="flex gap-2 justify-center md:justify-start items-center">
-                        <a class="px-4 py-1.5 text-sm font-semibold border border-gray-300 rounded-lg cursor-pointer">
+                        <a class="px-4 py-1.5 text-sm font-semibold border border-gray-300 rounded-lg cursor-pointer transition-all hover:bg-gray-100 hover:scale-105">
                             Modifier le profil
                         </a>
                         <a
-                            class="px-4 py-1.5 text-sm font-semibold border border-gray-300 rounded-lg flex items-center gap-2 cursor-pointer">
+                            class="px-4 py-1.5 text-sm font-semibold border border-gray-300 rounded-lg flex items-center gap-2 cursor-pointer transition-all hover:bg-gray-100 hover:scale-105">
                             Voir l'archive
                             </svg>
                         </a>
-                        <a class="p-1 border border-gray-300 rounded-lg cursor-pointer">
+                        <a class="p-1 border border-gray-300 rounded-lg cursor-pointer transition-all hover:bg-gray-100 hover:scale-110">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun">
+                                stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun transition-all">
                                 <circle cx="12" cy="12" r="4" />
                                 <path d="M12 2v2" />
                                 <path d="M12 20v2" />
@@ -159,7 +159,7 @@
                 <div class="mb-2 text-left">
                     <p class="font-semibold mb-1 text-base md:text-lg">Mon Nom</p>
                     <p class="text-sm mb-1">Amateur de promenade & de bonne croquettes</p>
-                    <a href="https://jaimelescroquettes.fr" class="text-blue-500 text-sm">jaimelescroquettes.fr</a>
+                    <a href="https://jaimelescroquettes.fr" class="text-blue-500 text-sm transition-colors hover:text-blue-600">jaimelescroquettes.fr</a>
                 </div>
             </div>
         </section>
@@ -167,10 +167,10 @@
         <!-- Content Tabs -->
         <section class="border-t border-gray-200">
             <nav class="flex justify-center gap-8 md:gap-12">
-                <a href="#" class="flex items-center gap-2 py-4 border-t-2 border-gray-900 text-sm font-semibold">
+                <a href="#" class="flex items-center gap-2 py-4 border-t-2 border-gray-900 text-sm font-semibold transition-all hover:text-gray-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-grid2x2-icon lucide-grid-2x2">
+                        class="lucide lucide-grid2x2-icon lucide-grid-2x2 transition-all">
                         <path d="M12 3v18" />
                         <path d="M3 12h18" />
                         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -178,20 +178,20 @@
                     <span>PUBLICATIONS</span>
                 </a>
                 <a href="#"
-                    class="flex items-center gap-2 py-4 border-t-2 border-transparent text-sm font-semibold text-gray-500">
+                    class="flex items-center gap-2 py-4 border-t-2 border-transparent text-sm font-semibold text-gray-500 transition-all hover:text-gray-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-video-icon lucide-video">
+                        class="lucide lucide-video-icon lucide-video transition-all">
                         <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
                         <rect x="2" y="6" width="14" height="12" rx="2" />
                     </svg>
                     <span>REELS</span>
                 </a>
                 <a href="#"
-                    class="flex items-center gap-2 py-4 border-t-2 border-transparent text-sm font-semibold text-gray-500">
+                    class="flex items-center gap-2 py-4 border-t-2 border-transparent text-sm font-semibold text-gray-500 transition-all hover:text-gray-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-tags-icon lucide-tags">
+                        class="lucide lucide-tags-icon lucide-tags transition-all">
                         <path
                             d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z" />
                         <path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193" />
@@ -204,13 +204,13 @@
             <!-- Posts Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-0">
                 <!-- Post 1 -->
-                <div class="relative aspect-square bg-gray-100 overflow-hidden cursor-pointer group">
-                    <img src="assets/img/dog-1.jpg" alt="Post 1" class="w-full h-full object-cover">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden cursor-pointer group transition-all hover:opacity-90 hover:scale-105">
+                    <img src="assets/img/dog-1.jpg" alt="Post 1" class="w-full h-full object-cover transition-all group-hover:scale-110">
                 </div>
                 <!-- Post 2 -->
-                <div class="relative aspect-square bg-gray-100 overflow-hidden cursor-pointer group">
-                    <img src="assets/img/dog-2.jpg" alt="Post 2" class="w-full h-full object-cover">
-                    <div class="absolute top-2 right-2 text-white bg-black/80">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden cursor-pointer group transition-all hover:opacity-90 hover:scale-105">
+                    <img src="assets/img/dog-2.jpg" alt="Post 2" class="w-full h-full object-cover transition-all group-hover:scale-110">
+                    <div class="absolute top-2 right-2 text-white bg-black/80 transition-all hover:scale-110">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-presentation-icon lucide-presentation">
@@ -221,9 +221,9 @@
                     </div>
                 </div>
                 <!-- Post 3 -->
-                <div class="relative aspect-square bg-gray-100 overflow-hidden cursor-pointer group">
-                    <img src="assets/img/dog-3.jpg" alt="Post 3" class="w-full h-full object-cover">
-                    <div class="absolute top-2 right-2 text-white bg-bg-black/90">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden cursor-pointer group transition-all hover:opacity-90 hover:scale-105">
+                    <img src="assets/img/dog-3.jpg" alt="Post 3" class="w-full h-full object-cover transition-all group-hover:scale-110">
+                    <div class="absolute top-2 right-2 text-white bg-bg-black/90 transition-all hover:scale-110">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-square-play-icon lucide-square-play">
@@ -239,15 +239,15 @@
     <!-- Footer -->
     <footer class="lg:px-50">
         <div class="md:flex md:items-center pb-3">
-            <nav class="p-5">
-                <ul class="flex gap-4 text-xs text-gray-400">
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Aide</a></li>
-                    <li><a href="#">Presse</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Carrières</a></li>
-                </ul>
-            </nav>
+        <nav class="p-5">
+            <ul class="flex gap-4 text-xs text-gray-400">
+                <li><a href="#" class="transition-colors hover:text-gray-600">À propos</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">Aide</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">Presse</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">API</a></li>
+                <li><a href="#" class="transition-colors hover:text-gray-600">Carrières</a></li>
+            </ul>
+        </nav>
             <p class="px-5 md:px-0 text-xs text-gray-400">&copy; 2025 Instadog</p>
         </div>
     </footer>
